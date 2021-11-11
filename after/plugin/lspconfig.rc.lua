@@ -1,5 +1,5 @@
 local nvim_lsp = require('lspconfig')
-local protocol = require'vim.lsp.protocol'
+local protocol = require('vim.lsp.protocol')
 
 -- Use an on_attach function to only map the following keys 
 -- after the language server attaches to the current buffer
@@ -16,36 +16,7 @@ local on_attach = function(client, bufnr)
         buf_set_keymap('n', '<space>rn', '<Cmd>lua vim.lsp.buf.rename()<CR>', opts)
         buf_set_keymap('n', '<space>ca', '<Cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
-        require'completion'.on_attach(client, bufnr)
-
-        --protocol.SymbolKind = { }
-        protocol.CompletionItemKind = {
-                '', -- Text
-                '', -- Method
-                '', -- Function
-                '', -- Constructor
-                '', -- Field
-                '', -- Variable
-                '', -- Class
-                'ﰮ', -- Interface
-                '', -- Module
-                '', -- Property
-                '', -- Unit
-                '', -- Value
-                '', -- Enum
-                '', -- Keyword
-                '﬌', -- Snippet
-                '', -- Color
-                '', -- File
-                '', -- Reference
-                '', -- Folder
-                '', -- EnumMember
-                '', -- Constant
-                '', -- Struct
-                '', -- Event
-                'ﬦ', -- Operator
-                '', -- TypeParameter
-        }
+        require('cmp')
 end
 
 nvim_lsp.pyright.setup {
