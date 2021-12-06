@@ -28,6 +28,3 @@ nnoremap <leader>. :bnext<CR>
 
 " Miscellaneous
 nnoremap <leader>so :source $MYVIMRC<CR>
-cmap W w !sudo tee > /dev/null %
-
-nnoremap <leader>fo :make format
