@@ -53,6 +53,11 @@ nvim_lsp.pyright.setup {
         filetypes = { "python" }
 }
 
+nvim_lsp.terraformls.setup{
+        on_attach = on_attach,
+        filetypes = { "terraform" }
+}
+
 -- icon
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
