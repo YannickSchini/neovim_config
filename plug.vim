@@ -16,5 +16,6 @@ Plug 'kyazdani42/nvim-web-devicons' " Devicons for Telescope
 Plug 'hoob3rt/lualine.nvim' " Status line
 Plug 'ap/vim-buftabline' " Buffer info in the tabline
 Plug 'ThePrimeagen/harpoon' " Quick navigation between files
+Plug 'junegunn/goyo.vim' " Distraction free mode
 
 call plug#end()

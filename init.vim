@@ -31,3 +31,5 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 " colorise les nbsp
 highlight NbSp ctermbg=lightred guibg=lightred
 match NbSp / /
+
+let g:goyo_width=120
