@@ -8,7 +8,11 @@ Plug 'tpope/vim-commentary' " Easy commenting/uncommenting
 Plug 'neovim/nvim-lspconfig' " Some LSP configs
 Plug 'glepnir/lspsaga.nvim' " LSP UI enhancements
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter integration (syntax highlighting)
-Plug 'nvim-lua/completion-nvim' " Autocompletion
+Plug 'hrsh7th/nvim-cmp' " Completion engine
+Plug 'hrsh7th/cmp-nvim-lsp' " LSP data source for completion
+Plug 'hrsh7th/cmp-vsnip' " Snippet data source for completion
+Plug 'hrsh7th/vim-vsnip' " Snippet engine
+Plug 'onsails/lspkind-nvim' " Autocompletion icons for the LSP
 Plug 'nvim-lua/popup.nvim' " Telescope dependency
 Plug 'nvim-lua/plenary.nvim' " Telescope dependency
 Plug 'nvim-telescope/telescope.nvim' " Fuzzy Finder & More
