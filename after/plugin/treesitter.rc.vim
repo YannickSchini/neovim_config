@@ -20,6 +20,7 @@ require'nvim-treesitter.configs'.setup {
     "lua",
     "toml",
     "hcl",
+    "rust",
   },
 }
 
