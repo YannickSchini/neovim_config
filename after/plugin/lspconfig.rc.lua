@@ -15,6 +15,9 @@ local on_attach = function(client, bufnr)
         buf_set_keymap('n', '<space>gtd', '<Cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
         buf_set_keymap('n', '<space>rn', '<Cmd>lua vim.lsp.buf.rename()<CR>', opts)
         buf_set_keymap('n', '<space>ca', '<Cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+        buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
+        buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+        buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
         require('cmp')
 end
@@ -29,6 +32,10 @@ nvim_lsp.terraformls.setup{
         filetypes = { "terraform" }
 }
 
+nvim_lsp.rust_analyzer.setup{
+        on_attach = on_attach,
+        filetypes = { "rust" }
+}
 -- icon
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
