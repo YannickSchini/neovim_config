@@ -33,8 +33,8 @@ noremap R L
 noremap T J
 noremap S K
 " Corollaire : repli suivant / précédent
-" noremap zs zj
-" noremap zt zk
+noremap zt zj
+noremap zs zk
  
 " {HJKL} <- [CTSR]
 " ————————————————
