@@ -1,5 +1,8 @@
 " Source: https://bepo.fr/wiki/Vim
 
+" Remap la sortie de l’insert mode
+inoremap àà <ESC>
+
 " {W} -> [É]
 " ——————————
 " On remappe W sur É :
