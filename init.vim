@@ -27,7 +27,7 @@ set cc=80
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in') |
-                        \ execute 'Telescope find_files' | execute 'cd '.argv()[0] | endif
+                        \ execute 'Telescope git_files' | execute 'cd '.argv()[0] | endif
 
 " colorise les nbsp
 highlight NbSp ctermbg=lightred guibg=lightred
