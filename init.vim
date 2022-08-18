@@ -19,6 +19,7 @@ colorscheme gruvbox-material
 set guifont="FiraCode Retina"
 set mouse=nv
 set cursorline
+set undofile
 
 set expandtab
 set autoindent
