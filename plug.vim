@@ -21,5 +21,6 @@ Plug 'ThePrimeagen/harpoon' " Quick navigation between files
 Plug 'junegunn/goyo.vim' " Distraction free mode
 Plug 'Pocco81/AutoSave.nvim' " Autosave when leaving insert mode
 Plug 'simrat39/rust-tools.nvim', { 'for': 'rust' } " Rust LSP integration (inlay hints, etc)
+Plug 'lukas-reineke/indent-blankline.nvim' " Highlight indentation
 
 call plug#end()
